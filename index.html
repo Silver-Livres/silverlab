@@ -27,7 +27,7 @@
   <meta name="twitter:creator" content="@silverlivres">
   <meta name="twitter:image:src" content="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg">
 
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 
   <!-- Début de widget de badge Calendly -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -39,7 +39,11 @@
 
 <style>
 
-body {margin: 0px}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {margin: 0px;
+
+}
 
 .container{
   display: flex;
@@ -49,70 +53,146 @@ body {margin: 0px}
 }
 
 img{
-  height: 50px;
-  width: 100px;
+  height: 50%;
+  
   margin-left:5%;
 }
 
 nav {
-  background-color: #e6ad22;
+  background-color: #ffffff;
   width: 100%;
+  height: 100px;
   display:inline-flex;
   align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+.menu-content{
+  display: inline-flex;
+  align-items: center;
+  height: 50%;
+}
+
+.logo-menu{
+  width: 80%;
 }
 
 .menu{
-  display: flex;
-  width: 80%;
+  display: inline-flex;
+  width: 100%;
   padding-right: 10px;
   flex-flow: row wrap;
-  justify-content: flex-end;
-  color: white;
-  font-weight: bold;
 }
 
 li{
   display: flex;
   margin: 2%;
+  position:relative;
+}
+
+li:hover::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom:0px; /*Change this to increase/decrease distance*/
+    border-bottom: 2px solid #000;  
 }
 
 header{
   display: flex;
-  background-color: white;
+  background-color: black;
   height: 500px;
   align-items: center;
   justify-items: center;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://raw.githubusercontent.com/stephanefullstack/silverlivreswebsite/master/external-content.duckduckgo.com2.jpeg");
+  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
   background-size:cover;
   background-position: center;
+  margin-top: 100px;
 }
 
 h1{
-  color: white;
+  display: flex;
+  color: black;
+  font-size: 100px;
+  font-family: Monserat;
+
 }
 
 .headertext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   text-align: center;
+
+}
+
+button{
+  width: auto;
+  border-radius: 15px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  color: #e6ad22;
+  font-style: Monserat;
+  font-weight:bolder;
+  cursor: pointer;
+  height: auto;
+  padding: 10px;
 }
 
 h2{
   width: 100%;
   text-align: center;
+  font-family: Monserat;
 }
 .text{
   margin: 75px 0px;
 }
 p{
   margin: 1%;
-  padding: 0% 20%;
+  padding: 3% 30%;
   text-align: center;
 }
 
-@media screen (max-width: 300px) {
+#Bienvenue{
+  height: 100px;
+}
+
+#Mission{
+  padding: 30px;
+  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("ahttps://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/index%C3%A9-480w.jpg");
+  background-size:cover;
+  height: 200px;
+}
+
+#Mission2{
+  height: 0px;
+  background-color:white;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
   .cards {
     border-radius: 15px;
   }
+
+  h1{
+    font-size: 50px;
+  }
+  .footer1{
+  display: flex;
+  background-color: black;
+    flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
 }
 
 
@@ -121,9 +201,9 @@ p{
   flex-flow: column wrap;
   align-items: center;
   justify-items: center;
-  background-color: #e6ad22;
+  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://raw.githubusercontent.com/stephanefullstack/silverlivreswebsite/master/external-content.duckduckgo.com2.jpeg");
   border: 10px solid white;
-  border-radius: 10px;
+  border-radius: 30px;
   margin: 1px;
   width: 300px;
   height: 300px;
@@ -146,7 +226,15 @@ h4{
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  margin: 100px 0px;
+  padding: 50px;
+  margin-top: 50px;
+  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
+}
+
+.image-contacts{
+  width: 70px;
+  height: 50%;
+  padding: 10px;
 }
 
 .footer1{
@@ -162,46 +250,67 @@ footer-menu{
   color: white;
 }
 
+.footer1 > a{
+  width: 50%;
+}
+
+.footer1 > a > img{
+  width: 50%;
+}
+
 a:link {
-  color: white;
+  color: #000;
   text-decoration: none;
+  cursor: pointer;
+  font-weight: inherit;
+  letter-spacing: .03em;
+  font-size: 125%;
+  font-family: Montserrat;
 }
 
 /* visited link */
 a:visited {
-  color: white;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: gray;
+  color: black;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: #e6ad22;
 }
 
 </style>
 
 <body style="margin: 0px">
   <nav>
-    <a href="https://silverlivres.org"><img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
-    <ul class="menu">
-      <li style="color: white"><a href=#Mission>Mission</a></li>
-      <li style="color: white"><a href=#Donner>Participer</a></li>
-      <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
-    </ul>
+    <div class="menu-content">
+        <a href="https://silverlivres.org"><img class="logo-menu" src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
+      <ul class="menu">
+        <li style="color: white"><a href=#Mission2>Notre mission</a></li>
+        <li style="color: white"><a href=#Donner>Participer</a></li>
+        <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
+      </ul>
+    </div>
   </nav>
   <header>
     <div class="headertext">
       <h1>Une seconde vie <br>pour vos livres</h1>
+      <!-- <button>
+          <a href="https://calendly.com/silverlivres/15min?month=2020-06">Donner <br> un livre</a> 
+        </button> //-->
     </div>
   </header>
   <main>
-    <section class="text">
+    <section class="text" id="Bienvenue">
       <h2>Bienvenue</h2>
       <p>Nous collectons les livres chez les particuliers et les envoyons à des bibliothèques associtives de lecture et d'alphabétisation à travers le monde.</p>
+    </section>
+    <section id="Mission2">
+      a
     </section>
     <section class="text" id="Mission">
       <h2>Notre mission</h2>
@@ -234,16 +343,17 @@ a:active {
           <h2>Partenaire</h2>
         </div>
         <div class="partenaires">
-          <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/cropped-logo-oui-5-640w.jpg" alt="" style="height: 150px; width: 150px; margin-left: 0px">
+          <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/cropped-logo-oui-5-640w.jpg" alt="" style="height: 150px; width: 150px; margin-left: 0px; padding: 40px">
+          
         </div>
 
       </div>
     </section>
     <section class="contacts" id="nouscontacter">
       <h2>Contacts</h2>
-      <a href="https://twitter.com/silverlivres"><img src="https://duckduckgo.com/i/777ad048.png" alt="" style="height: 70px; margin-left: 0px"></a>
-      <a href="https://www.facebook.com/Assocaition-Silver-104496141216116"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fsocial-media-logos-6%2F512%2F83-facebook-512.png&f=1&nofb=1" alt="" style="height: 80px; margin: 0% 20px"></a>
-      <a href="https://api.whatsapp.com/send?phone=+33672520115"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="" style="height: 85px"></a>
+      <a href="https://twitter.com/silverlivres"><img class="image-contacts" src="https://duckduckgo.com/i/777ad048.png" alt="" ></a>
+      <a href="https://www.facebook.com/Assocaition-Silver-104496141216116"><img class="image-contacts" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fsocial-media-logos-6%2F512%2F83-facebook-512.png&f=1&nofb=1" alt="" ></a>
+      <a href="https://api.whatsapp.com/send?phone=+33672520115"><img class="image-contacts" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="" ></a>
     </section>
   </main>
   <footer>
@@ -251,9 +361,9 @@ a:active {
       <div class="footer1">
         <a href="https://silverlivres.org"><img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
         <ul >
-          <li style="color: white; width: 200px"><a href=#Mission>Mission</a></li>
-          <li style="color: white"><a href=#Donner>Faire un don</a></li>
-          <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
+          <li ><a style="color: white; width: 200px" href=#Mission>Mission</a></li>
+          <li ><a style="color: white; width: 200px"href=#Donner>Faire un don</a></li>
+          <li ><a style="color: white; width: 200px"href=#nouscontacter>Contacts</a></li>
         </ul>
       </div>
     </section>
