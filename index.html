@@ -34,7 +34,7 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/silverlivres/15min', text: 'Planifier votre don de livre', color: '#e6ad22', textColor: '#ffffff', branding: false });</script>
   <!-- Fin de widget de badge Calendly -->
-  
+
 </head>
 
 <style>
@@ -234,8 +234,8 @@ h4{
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-top: 50px;
-  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
+  margin-top: 0px;
+  background-color: white;
 }
 
 .image-contacts{
@@ -292,6 +292,38 @@ a:active {
   color: #e6ad22;
 }
 
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: white;
+color: #ebbf52;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #e6ad22a7;
+}
+.containerform {
+  background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
+
+ padding: 20px;
+}
 </style>
 
 <body style="margin: 0px">
@@ -358,59 +390,20 @@ a:active {
 
       </div>
     </section>
-    <div class="container">
-  <style media="screen">
-    /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
- width: 100%; /* Full width */
- padding: 12px; /* Some padding */
- border: 1px solid #ccc; /* Gray border */
- border-radius: 4px; /* Rounded borders */
- box-sizing: border-box; /* Make sure that padding and width stays in place */
- margin-top: 6px; /* Add a top margin */
- margin-bottom: 16px; /* Bottom margin */
- resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+      <form action="index.html" class="containerform">
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
- background-color: white;
- color: #ebbf52;
- padding: 12px 20px;
- border: none;
- border-radius: 4px;
- cursor: pointer;
-}
+        <label for="email">Email</label>
+        <input type="text" id="email" name="firstname" placeholder="Your email..">
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
- background-color: #e6ad22a7;
-}
+        <label for="lname">Prénom</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-/* Add a background color and some padding around the form */
-.container {
- border-radius: 5px;
- background-color: #e6ad22c7;
- padding: 20px;
-}
-  </style>
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Ton message ici.." style="height:200px"></textarea>
 
- <form action="action_page.php">
+        <input type="submit" value="Merci">
 
-   <label for="email">Email</label>
-   <input type="text" id="email" name="firstname" placeholder="Your email..">
-
-   <label for="lname">Prénom</label>
-   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-   <label for="subject">Message</label>
-   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-   <input type="submit" value="Merci">
-
- </form>
-</div>
-
+      </form>
     <section class="contacts" id="nouscontacter">
       <h2>Contacts</h2>
       <a href="https://twitter.com/silverlivres"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/Twitter_Bird.svg.png" alt="" ></a>
@@ -430,7 +423,9 @@ input[type=submit]:hover {
       </div>
     </section>
   </footer>
+
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7909595.js"></script>
 <!-- End of HubSpot Embed Code -->
+
 </body>
