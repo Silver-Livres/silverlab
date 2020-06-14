@@ -403,14 +403,17 @@ background-color: #e6ad22a7;
     </section>
       <form action="index.html" class="containerform">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="firstname" placeholder="Ton email">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="firstname" placeholder="Quel est ton email?" required>
 
         <label for="firstname">Prénom</label>
-        <input type="text" id="firstname" name="firstname" placeholder="Ton prénom">
+        <input type="text" id="firstname" name="firstname" placeholder="Quel est ton prénom?">
 
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Ton message ici.." style="height:200px"></textarea>
+        <label for="lastname">Nom</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Quel est ton nom?">
+
+        <label for="subject" required>Message *</label>
+        <textarea id="subject" name="subject" placeholder="Ton message ici.." style="height:200px" required></textarea>
 
         <input type="submit" value="Merci">
 
