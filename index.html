@@ -330,10 +330,17 @@ cursor: pointer;
 input[type=submit]:hover {
 background-color: #e6ad22a7;
 }
-.containerform {
+
+.containercontainerform{
+  padding: 1% 25%;
   background-image:  linear-gradient(#e6ae22c7, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
 
+}
+
+.containerform {
+
  padding: 20px;
+ margin-bottom: 0px;
 }
 </style>
 
@@ -401,6 +408,7 @@ background-color: #e6ad22a7;
 
       </div>
     </section>
+    <div class="containercontainerform">
       <form action="index.html" class="containerform">
 
         <label for="email">Email *</label>
@@ -412,18 +420,23 @@ background-color: #e6ad22a7;
         <label for="lastname">Nom</label>
         <input type="text" id="lastname" name="lastname" placeholder="Quel est ton nom?">
 
-        <label for="subject" required>Message *</label>
+        <label for="subject" required>Message</label>
         <textarea id="subject" name="subject" placeholder="Ton message ici.." style="height:200px" required></textarea>
 
         <input type="submit" value="Merci">
 
       </form>
-    <section class="contacts" id="nouscontacter">
-      <h2>Contacts</h2>
-      <a href="https://twitter.com/silverlivres"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/Twitter_Bird.svg.png" alt="" ></a>
-      <a href="https://www.facebook.com/Assocaition-Silver-104496141216116"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/800px-Facebook_f_logo_(2019).svg.png" alt="" ></a>
-      <!--<a href="https://api.whatsapp.com/send?phone=+33672520115"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/whatsapp.png" alt="" ></a>//-->
-    </section>
+    </div>
+
+
+      <!-- Contact logo réseaux sociaux
+  <section class="contacts" id="nouscontacter">
+    <h2>Contacts</h2>
+    <a href="https://twitter.com/silverlivres"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/Twitter_Bird.svg.png" alt="" ></a>
+    <a href="https://www.facebook.com/Assocaition-Silver-104496141216116"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/800px-Facebook_f_logo_(2019).svg.png" alt="" ></a>
+    <!--<a href="https://api.whatsapp.com/send?phone=+33672520115"><img class="image-contacts" src="https://raw.githubusercontent.com/Silver-Livres/Silver-Livres/master/whatsapp.png" alt="" ></a>//-->
+  </section>
+
   </main>
   <footer>
     <section>
@@ -438,7 +451,7 @@ background-color: #e6ad22a7;
     </section>
   </footer>
 
-  <!-- Start of HubSpot Embed Code -->
+<!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7909595.js"></script>
 <!-- End of HubSpot Embed Code -->
 
