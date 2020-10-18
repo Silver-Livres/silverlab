@@ -80,7 +80,7 @@ mixpanel.init("dd5a727b11a493379bec72c0e3aaaed5", {batch_requests: true})</scrip
 </head>
 
 <style>
-
+@import 'navbar.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {margin: 0px;
@@ -111,7 +111,7 @@ nav {
   top: 0;
 }
 
-.menu-content{
+/*.menu-content{
   display: inline-flex;
   align-items: center;
   height: 50%;
@@ -127,7 +127,7 @@ nav {
   width: 100%;
   padding-right: 10px;
   flex-flow: row wrap;
-}
+}*/
 
 li{
   display: flex;
@@ -154,7 +154,7 @@ header{
   background-image:  linear-gradient(#e7ac22c7, #e7ac22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
   background-size:cover;
   background-position: center;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 h1{
@@ -405,11 +405,46 @@ p{
   padding: 3% 3%;
   text-align: center;
 }
-
+}
 </style>
 
 <body style="margin: 0px">
-  <nav>
+  <!-- new navbar 18/10/2020 -->
+ <!--  <nav class="mobile-menu">
+    <a href="https://silverlivres.org"><img class="logo-menu" src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
+    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+    <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="#Mission2" class="mobile-menu__link">Notre mission</a></li>
+        <li class="mobile-menu__item"><a href="#Projets" class="mobile-menu__link">Nos projets</a></li>
+        <li class="mobile-menu__item"><a href="#nouscontacter" class="mobile-menu__link">Contacts</a></li>
+    </ul>
+    </div>
+  </nav> -->
+  <!-- end of new navbar -->
+  <div class="menu-content">
+    <a href="https://silverlivres.org"><img class="logo-menu" src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
+    <div  class="open">
+      <span class="cls"></span>
+      <span>
+        <ul class="sub-menu ">
+          <li>
+            <a href="#Mission2" title="Mission">Notre mission</a>
+          </li>
+          <li>
+            <a href="#Projets" title="Projets">Nos projets</a>
+          </li>
+          <li>
+            <a href="#nouscontacter" title="Contacts">Contacts</a>
+          </li>
+        </ul>
+      </span>
+      <span class="cls"></span>
+    </div>
+  </div>
+  <!-- old navbar -->
+ <!--  <nav>
     <div class="menu-content">
         <a href="https://silverlivres.org"><img class="logo-menu" src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
       <ul class="menu">
@@ -418,7 +453,7 @@ p{
         <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
   <header>
     <div class="headertext">
       <h1>Une seconde vie <br>pour vos livres</h1>
@@ -545,4 +580,22 @@ p{
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7909595.js"></script>
 <!-- End of HubSpot Embed Code -->
 
+<script>
+  const burger = document.querySelector(".open");
+    burger.addEventListener('click' , function (event) {
+    burger.classList.add("oppenned");
+    event.stopPropagation();
+
+    const cross = document.querySelector("body");
+      cross.addEventListener('click' , function (event) {
+      burger.classList.remove("oppenned");
+    });
+
+    const cross4 = document.querySelector(".sub-menu");
+      cross4.addEventListener('click' , function (event) {
+      burger.classList.remove("oppenned");
+      event.stopPropagation();
+    });
+  });
+</script>
 </body>
