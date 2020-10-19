@@ -1,0 +1,106 @@
+@media only screen and (min-width: 1200px) {
+  .donner {
+
+  }
+
+  .donnertext {
+    display: flex;
+  }
+
+  .donnerdesc {
+    width: 50%;
+    text-align: justify;
+    padding: 10% 10% 4% 10%;
+    color: #3d4554;
+    font-size: 25px;
+    padding: auto;
+  }
+
+  .donnertitle {
+    width: 50%;
+    margin: 10% 5%;
+    text-align: left;
+    color: #3d4554;
+    font-weight: bold;
+    font-size: 70px;
+  }
+
+  .donnerbtns {
+    margin-left: 10%;
+  }
+
+  .donnerbtn {
+   /* width: 200px;
+    display: flex;
+    padding: 15px 10px;
+    height: auto;
+    color: #FFBF00;
+    border-radius: 50px;
+    border-color: #FFBF00;
+    font-weight: inherit;
+    letter-spacing: .03em;
+    font-size: 125%;
+    font-family: Montserrat;*/
+    border-style: solid;
+    border-width: 5px;
+    background-color: none;
+    border-color: #FFBF00;
+    color: #FFBF00;
+    font-weight: bold;
+    border-radius: 50px;
+    height: auto;
+    padding: 15px 10px;
+    margin: 15px 15px 15px 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .donner {
+
+  }
+
+  .donnertext {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .donnerdesc {
+    /*width: 50%;*/
+    text-align: justify;
+    padding: 10% 15% 4% 15%;
+    color: #3d4554;
+    font-size: 16px;
+    padding: auto;
+  }
+
+  .donnertitle {
+    /*width: 50%;*/
+    margin: 10% auto 0% auto;
+    text-align: center;
+    color: #3d4554;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .donnerbtns {
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .donnerbtn {
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    background-color: none;
+    border-color: #FFBF00;
+    color: #FFBF00;
+    font-weight: bold;
+    border-radius: 50px;
+    height: auto;
+    padding: 15px 10px;
+    margin: 15px 0px 5px 0px;
+    width: 200px;
+  }
+}

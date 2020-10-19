@@ -1,16 +1,22 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
 .menu-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
+  height: 100px;
+  margin: 0% 15%;
+  font-size: 20px;
 }
 
 .sub-menu{
   display: inline-flex;
-  width: 500px;
+  width: 800px;
   /*padding-right: 10px;*/
   flex-flow: row wrap;
+}
+
+.sub-menu a {
+  color: #3d4554;
 }
 
   .logo-menu{
@@ -18,8 +24,8 @@
   /*  position: fixed;*/
     top: 40px;
     left: 40px;
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
     margin: 10px;
     display: block;
     cursor: pointer;
@@ -28,7 +34,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   img{
     height: 50%;
 
@@ -108,7 +114,7 @@
     top: 0;
     position: absolute;
     /*background-color: rgba(38, 84, 133, 0.54);*/
-    background-color: #e7ac22;
+    background-color: #FFBF00;
     border-radius: 50%;
     z-index: 18;
     overflow: hidden;
@@ -174,7 +180,7 @@
     top: -160px;
     border-radius: 50%;
     /*background-color: rgba(38, 84, 133, 0.54);*/
-    background-color: #e7ac22;
+    background-color: #FFBF00;
   }
   .oppenned span:nth-child(3) {
     -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);

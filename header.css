@@ -1,0 +1,158 @@
+@media only screen and (min-width: 1200px) {
+  header{
+    display: flex;
+    /*background-color: black;*/
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    /*background-image:  linear-gradient(#e7ac22c7, #e7ac22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");*/
+    /*background-size:cover;
+    background-position: center;*/
+    margin: 0px 10%;
+  }
+
+  header img {
+    width: 1000px;
+    height: 70%;
+  }
+
+  h1{
+    display: flex;
+    color: #3d4554;
+    font-size: 70px;
+    font-family: Montserrat;
+    margin: 0% 30%;
+  }
+
+  .subtitle {
+    margin: 0% 30%;
+  }
+
+  .headertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    color: rgba(61,69,84,.7);
+    font-family: Montserrat;
+
+  }
+
+  button{
+    width: auto;
+    border-radius: 15px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: #FFBF00;
+    font-family: Monserat;
+    font-weight:bolder;
+    cursor: pointer;
+    height: auto;
+    padding: 10px;
+  }
+
+  .btns {
+    display: flex;
+    margin: 0% 30%;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    background-color: #FFBF00;
+    border-radius: 50px;
+    height: auto;
+    padding: 15px 10px;
+    margin: 15px;
+  }
+
+  a.btn {
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    /*background-color: black;*/
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    /*background-image:  linear-gradient(#e7ac22c7, #e7ac22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");*/
+    /*background-size:cover;
+    background-position: center;*/
+    margin: 0px 20%;
+  }
+
+  header img {
+    width: 350px;
+    height: 350px;
+    margin: 0px;
+  }
+
+  h1{
+    font-size: 40px;
+    display: flex;
+    color: #3d4554;
+    font-family: Montserrat;
+    margin: 0% 4%;
+    padding: 10px;
+  }
+
+  .subtitle {
+
+  }
+
+  .headertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    color: rgba(61,69,84,.7);
+    font-family: Montserrat;
+
+  }
+
+  button{
+    width: auto;
+    border-radius: 15px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: #FFBF00;
+    font-family: Monserat;
+    font-weight:bolder;
+    cursor: pointer;
+    height: auto;
+    padding: 10px;
+  }
+
+  .btns {
+    display: flex;
+    margin: 0% 30%;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    background-color: #FFBF00;
+    border-radius: 50px;
+    height: auto;
+    padding: 15px 10px;
+    margin: 15px;
+  }
+
+  a.btn {
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+  }
+}

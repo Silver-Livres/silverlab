@@ -1,0 +1,55 @@
+@media only screen and (min-width: 1200px) {
+  .Bienvenue {
+    display: flex;
+  }
+
+  .bienvenueitem {
+    width: 50%;
+    color: #3d4554;
+  }
+
+  .bienvenueitem h2 {
+    text-align: left;
+    margin: 15% 0% 0% 100px;
+    font-size: 60px;
+  }
+
+  .bienvenueitem p {
+    text-align: justify;
+    padding: 3% 100px;
+    font-size: 25px;
+  }
+
+  .bienvenueitem img {
+    width: 1000px;
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Bienvenue {
+    /*display: flex;*/
+  }
+
+  .bienvenueitem {
+    /*width: 50%;*/
+    color: #3d4554;
+  }
+
+  .bienvenueitem h2 {
+    /*text-align: left;
+    margin: 15% 0% 0% 100px;*/
+    font-size: 32px;
+  }
+
+  .bienvenueitem p {
+    text-align: justify;
+    padding: 3% 50px;
+    font-size: 16px;
+  }
+
+  .bienvenueitem img {
+    width: 350px;
+    height: 300px;
+  }
+}

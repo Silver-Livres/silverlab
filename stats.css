@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1200px) {
+  .stats {
+    display: flex
+  }
+
+  .statitem {
+    margin: auto;
+  }
+
+  .kpi {
+    font-weight: bold;
+    font-size: 70px;
+    color: #FFBF00;
+    text-align: center;
+  }
+
+  .kpidesc {
+    text-align: center;
+    color: #3d4554;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+
+  .statitem {
+    margin: auto;
+  }
+
+  .kpi {
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFBF00;
+    text-align: center;
+    width: 100px;
+  }
+
+  .kpidesc {
+    text-align: center;
+    width: 100px;
+    color: #3d4554;
+  }
+}
