@@ -43,11 +43,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 
-  <!-- Début de widget de badge Calendly -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<!--  Début de widget de badge Calendly -->
+<!--   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/silverlivres/15min', text: 'Planifier votre don de livre', color: '#e6ad22', textColor: '#ffffff', branding: false });</script>
-  <!-- Fin de widget de badge Calendly -->
+ -->  <!-- Fin de widget de badge Calendly -->
 
 
 
@@ -80,7 +80,15 @@ mixpanel.init("dd5a727b11a493379bec72c0e3aaaed5", {batch_requests: true})</scrip
 </head>
 
 <style>
+@import 'slider.css';
 @import 'navbar.css';
+@import 'header.css';
+@import 'mission.css';
+@import 'bienvenue.css';
+@import 'stats.css';
+@import 'donner.css';
+@import 'campagne.css';
+@import 'footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {margin: 0px;
@@ -94,11 +102,11 @@ body {margin: 0px;
   align-items: center;
 }
 
-img{
+/*img{
   height: 50%;
 
   margin-left:5%;
-}
+}*/
 
 nav {
   background-color: #ffffff;
@@ -145,7 +153,7 @@ li:hover::after{
     border-bottom: 2px solid #000;
 }
 
-header{
+/*header{
   display: flex;
   background-color: black;
   height: 500px;
@@ -185,7 +193,7 @@ button{
   cursor: pointer;
   height: auto;
   padding: 10px;
-}
+}*/
 
 h2{
   width: 100%;
@@ -202,16 +210,16 @@ p{
   font-size: 20px;
 }
 
-#Bienvenue{
+/*#Bienvenue{
   height: 100px;
-}
+}*/
 
-#Mission{
+/*#Mission{
   padding: 30px;
   background-image:  linear-gradient(#e7ac22, #e7ac22),url("ahttps://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/index%C3%A9-480w.jpg");
   background-size:cover;
   height: 300px;
-}
+}*/
 
 #Mission2{
   height: 0px;
@@ -270,7 +278,7 @@ h4{
   height: 70px;
   padding: 10px;
 }
-
+/*
 .footer1{
   display: flex;
   background-color: black;
@@ -292,9 +300,14 @@ footer-menu{
   width: 40%;
   height: 80%;
   padding: 15px;
+}*/
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-a:link {
+/*a:link {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -304,20 +317,20 @@ a:link {
   font-family: Montserrat;
 }
 
-/* visited link */
+/* visited link
 a:visited {
   color: black;
 }
 
-/* mouse over link */
+/* mouse over link
 a:hover {
   color: black;
 }
 
-/* selected link */
+/* selected link
 a:active {
   color: #e6ad22;
-}
+}*/*/*/*/
 
 
 /* Style inputs with type="text", select elements and textareas */
@@ -360,7 +373,7 @@ background-color: #e6ad22a7;
 
 .containercontainerform{
   padding: 1% 25%;
-  background-image:  linear-gradient(#e7ac22, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
+  background-image:  linear-gradient(#FFBF00, #FFBF00c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
 
 }
 
@@ -375,14 +388,16 @@ background-color: #e6ad22a7;
     border-radius: 15px;
   }
 
-  h1{
+/*  h1{
     font-size: 50px;
-  }
+  }*/
 
   .containercontainerform{
     padding: 1% 5%;
-    background-image:  linear-gradient(#e7ac22, #e6ad22c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
-    }
+    background-image:  linear-gradient(#FFBF00, #FFBF00c7),url("https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/122558-1920w.jpeg");
+    background-size:cover;
+    color: #3d4554;
+  }
 
   .footer1{
   display: flex;
@@ -410,7 +425,7 @@ p{
 
 <body style="margin: 0px">
   <!-- new navbar 18/10/2020 -->
- <!--  <nav class="mobile-menu">
+  <!-- <nav class="mobile-menu">
     <a href="https://silverlivres.org"><img class="logo-menu" src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt=""></a>
     <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
     <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
@@ -433,14 +448,13 @@ p{
             <a href="#Mission2" title="Mission">Notre mission</a>
           </li>
           <li>
-<<<<<<< HEAD
-            <a href="#Projets" title="Projets">Nos projets</a>
-=======
-            <a href="#campagne" title="Projets" color="#FFBF00">Nos projets</a>
->>>>>>> lab2
+            <a href="#campagne" title="Projets">Nos projets</a>
           </li>
           <li>
-            <a href="#nouscontacter" title="Contacts">Contacts</a>
+            <a href="#nouscontacter" title="Contacts">Contact</a>
+          </li>
+          <li>
+            <a href="#https://www.helloasso.com/associations/silver-livres/formulaires/2/widget" title="Contacts">Faire un don</a>
           </li>
         </ul>
       </span>
@@ -460,12 +474,13 @@ p{
   </nav> -->
   <header>
     <div class="headertext">
-      <h1>Une seconde vie <br> pour vos livres</h1>
+      <!-- <h1>Une seconde vie <br>pour vos livres</h1> -->
+      <div class="title">
+        <b><h1>Réimaginons l'accès au livre</h1></b>
+      </div>
       <!-- <button>
           <a href="https://calendly.com/silverlivres/15min?month=2020-06">Donner <br> un livre</a>
         </button> //-->
-<<<<<<< HEAD
-=======
       <div class="subtitle">
           <b>Silver</b> revalorise le livre en connectant les personnes avec les surplus de livres stockés et inutilisés.
       </div>
@@ -476,60 +491,56 @@ p{
     </div>
     <div>
       <img src="6_SCENE.svg" alt="">
->>>>>>> lab2
     </div>
   </header>
   <main>
-    <section class="text" id="Bienvenue">
-      <h2>Bienvenue</h2>
-      <p>Nous   collectons les livres chez les particuliers et les envoyons à des bibliothèques associatives de lecture et d'alphabétisation à travers le monde.</p>
-    </section>
-    <section id="Mission2">
-      a
-    </section>
     <section class="text" id="Mission">
-      <h2>Notre mission</h2>
-      <p>Promouvoir l'épanouissement intellectuel des jeunes et favoriser les échanges et expériences entre eux. Développer l'éducation et rendre accessible la connaissance à tous.</p>
-    </section>
-    <section>
-      <h2>Nos projets</h2>
-      <div class="project">
-        <h3>Be a blessing X Silver</h3>
-        <p>Envoi de 2250 livres à destination d'une association de lecture et d'alphabétisation</p>
-        <button>Participer</button>
-        <h6>En cours</h6>
+      <div class="mission">
+        <div id="missiontitle">
+          <b>Pourquoi <br> des livres?</b>
+        </div>
+        <div id="missiondesc">
+          Pour promouvoir l'épanouissement intellectuel des jeunes et favoriser les échanges et expériences entre eux. Mais aussi pour développer l'éducation et rendre accessible la connaissance à tous.
+        </div>
       </div>
-      <div class="project">
-        <h3>Recyclivre X Silver</h3>
-        <p>Collecte de 2000 livres pour enfants</p>
-        <h6>Terminé</h6>
-      </div>
-      <div class="project">
-        <h3>Le bouquin volant X Silver</h3>
-        <p>Collecte de 250 livres pour enfants</p>
-        <h6>Terminé</h6>
+      <div class="mission">
+        <div id="missiondesc2">
+          <b>61,3 millions</b> d’enfants n’ont pas accès à l’école primaire dans le monde selon le « Rapport mondial de suivi sur l’Éducation pour tous 2015 » de l’Unesco [1](données 2015).
+          <br>
+          La situation reste préoccupante, même si les choses s’améliorent : ils étaient 100 millions dans ce cas en 2000. Le nombre d’enfants non scolarisés en primaire a été divisé par près de deux entre 2000 et 2015, soit l’équivalent de 40 millions d’enfants supplémentaires qui ont pu rejoindre les bancs de l’école.
+          <br>
+           32,5 millions des enfants non scolarisés vivent en Afrique subsaharienne, un chiffre encore très élevé même s’il a baissé de 9 millions entre 2000 et 2015 en dépit d’une forte pression démographique. Ils sont aussi encore 18 millions à ne pas être scolarisés en primaire en Asie, contre 1,9 million dans les pays riches.
+        </div>
+        <!-- https://www.inegalites.fr/La-scolarisation-des-enfants-dans-le-monde -->
       </div>
     </section>
-<<<<<<< HEAD
-    <section class="container" id="Donner">
-      <h2>Participez!</h2>
-      <div class="">
+    <section class="Bienvenue">
+      <div class="bienvenueitem">
+        <img src="8_SCENE.svg" alt="" >
       </div>
-      <a href="https://calendly.com/silverlivres/15min" mixpanel.track("Clics sur donner");>
-      <div class="cards" style="background-image: url('./IMG-20200728-WA0002.jpg'); background-size: cover;">
-        <!-- <h4>Donnez un livre</h4> -->
-        <!-- <img src="https://i.pinimg.com/originals/8b/09/d3/8b09d31a10cec30455d81ff99622432e.png" alt="" style="height: 100px; padding-bottom: 50px"> -->
+      <div class="bienvenueitem">
+        <h2>SILVER revalorise <br>vos livres en leur <br>donnant une <br>seconde vie</h2>
+        <p>Nous collectons les livres chez les particuliers et les professionnnels et les envoyons à des bibliothèques associatives de lecture et d'alphabétisation à travers le monde.</p>
       </div>
-      </a>
-      <!-- <div class="cards">
-        <h4>Donnez du temps</h4>
-        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.emoji.co.uk%2Ffiles%2Fphantom-open-emojis%2Fsymbols-phantom%2F13160-clock-face-two-oclock.png&f=1&nofb=1" alt="" style="height: 100px; padding-bottom: 50px">
-      </div>//-->
-      <a href="https://www.donnerenligne.fr/silver-livres/faire-un-don/2">
-      <div class="cards" style="background-image: url('./IMG-20200728-WA0003.jpg'); background-size: cover;">
-        <!-- <h4>Financez-nous</h4> -->
-       <!-- <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1061%2F1924%2Fproducts%2FMoney_with_Wings_Emoji_grande.png%3Fv%3D1480481040&f=1&nofb=1" alt="" style="height: 100px; padding-bottom: 50px"> -->
-=======
+    </section>
+    <section class="stats">
+      <div class="statitem">
+        <div class="kpi">
+        2018
+        </div>
+        <div class="kpidesc">
+        création de l'association
+        </div>
+      </div>
+      <div class="statitem">
+        <div class="kpi">
+        2250+
+        </div>
+        <div class="kpidesc">
+        livres collectés
+        </div>
+      </div>
+    </section>
     <section class="donner">
       <div class="donnertext">
         <div class="donnerdesc">
@@ -557,29 +568,23 @@ p{
             Pour le premier envoi, SILVER s'associe à l'association togolaise BE A BLESSING pour mettre à disposition des enfants des livres dans la région d’Agoè-Nyivé.
           </div>
           <div class="campagnebtns">
-            <a href="https://silver-livres.github.io/silverlab/a2b.html" class="donnerbtn">Participez à la campagne de crowdfunding!</a>
+            <a href="https://silver-livres.github.io/silverlab/a2b.html" >Participez à la campagne de crowdfunding!</a>
           </div>
         </div>
->>>>>>> lab2
       </div>
-      </a>
     </section>
     <section>
       <div class="" style="margin: 100px 0px;">
         <div class="">
-          <h2>Partenaires</h2>
+          <h2 class="partnertitle" >Il nous font confiance</h2>
         </div>
         <div class="partenaires">
           <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/cropped-logo-oui-5-640w.jpg" alt="" style="height: 150px; width: 150px; margin-left: 0px; padding: 40px">
           <img src="LOGO_bouquins_volants.png" alt="" style="height: 150px; width: auto; margin-left: 0px; padding: 40px">
           <img src="Logo_RecycLivre_noir_V2.png" alt="" style="height: auto; width: auto; margin-left: 0px; padding: 40px">
-
         </div>
-
       </div>
     </section>
-<<<<<<< HEAD
-=======
     <section class="impact">
       <div class="impacttitle">
         Etes-vous prêt à avoir un impact positif?
@@ -587,10 +592,9 @@ p{
       <div class="impactdesc">
         Avec SILVER réduisez vos coûts de stockage et aidez des enfants à travers le monde.
       </div>
-      <a href="https://calendly.com/silverlivres/" class="impactbtn">Donner aujourd'hui</a>
+      <a href="" class="impactbtn">Donner aujourd'hui</a>
     </section>
 
->>>>>>> lab2
     <div class="containercontainerform" id="nouscontacter">
       <h2>Contact</h2>
       <form action="index.html" class="containerform">
@@ -622,7 +626,7 @@ p{
    </section> -->
 
   </main>
-  <footer>
+  <!-- <footer>
     <section class="footer1">
       <div style="width: auto" >
         <a href="https://www.instagram.com/silver.livres/"><img class="image-contacts" src="Instagram-Icon-PNG-1.png" alt="" ></a>
@@ -637,7 +641,18 @@ p{
         </ul>
       </div>
     </section>
-  </footer>
+  </footer> -->
+  <div class="footer">
+  <div class="footer-links">
+        <a href="https://www.instagram.com/silver.livres/"><img class="image-contacts" src="Instagram-Icon-PNG-1.png" alt="" ></a>
+        <a href="https://www.facebook.com/Assocaition-Silver-104496141216116/about/"><img class="image-contacts" src="facebook-icon-black-circle_155320.png" alt="" ></a>
+        <a href="https://twitter.com/silverlivres"><img class="image-contacts" src="twitterlogo.png" alt="" ></a>
+  </div>
+  <div class="footer-copyright">
+    This website is made with &#128154; at Paris
+  </div>
+</div>
+
 
 <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7909595.js"></script>
