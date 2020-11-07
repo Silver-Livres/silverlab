@@ -1,7 +1,14 @@
 @media only screen and (min-width: 1200px) {
   .campagnelogo {
+<<<<<<< HEAD
     text-align: center;
     margin: 10% 10% 10% 20%;
+=======
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 7%;
+>>>>>>> lab2
   }
 
   .campagneright {
@@ -22,7 +29,6 @@
     padding: 10% 25% 10px 25%;
     color: #3d4554;
     font-size: 25px;
-    padding: auto;
   }
 
   .campagnetext {
@@ -77,9 +83,12 @@
 
 @media only screen and (max-width: 1200px) {
   .campagnelogo {
+<<<<<<< HEAD
     /*margin: 25% 25% 0% 25%;*/
     width: 50%;
     height: 25%;
+=======
+>>>>>>> lab2
     text-align: center;
     margin: auto;
     margin-top: 100px;
