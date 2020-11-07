@@ -1,0 +1,233 @@
+@media only screen and (max-width: 1000px) {
+  #project {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #FFBF00;
+    margin: 0px;
+  }
+
+  .action {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5% 2%;
+  }
+
+  #projecttitle{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 10%;
+    color: white;
+  }
+
+  #projectdesc{
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    margin: 0px auto;
+  }
+
+  .projectstats{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+
+  .projectstatitem{
+    margin: auto;
+  }
+
+  .projectkpi{
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFBF00;
+    text-align: center;
+  }
+
+  .projectkpidesc {
+      text-align: center;
+      width: 100px;
+      color: #3d4554;
+      font-size: 13px;
+  }
+
+  .projectfooter {
+    background: #F4F4F4;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding: 0px 50%;
+    color: rgba(0,0,0,0.3);
+  }
+
+  .projectfooter a {
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .projectfooter a:hover {
+    opacity: 1;
+    color: black;
+  }
+
+  .projectcampagnebtns{
+    width: 100%;
+    color: white;
+  }
+
+  .donnertext{
+    display: block
+  }
+
+  .projectdonnerdesc {
+    text-align: justify;
+    padding: 10% 15% 4% 15%;
+    color: #3d4554;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body{
+      margin: 0px;
+      background-image: url('6_SCENE.svg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: 300px 300px;
+      background-position: left;
+    }
+
+  .middle{
+    margin: 0% 20%;
+    background-color: white
+  }
+
+    #project {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #FFBF00;
+    margin: 0px;
+  }
+
+  .action {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5% 2%;
+  }
+
+  #projecttitle{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 10%;
+    color: white;
+  }
+
+  #projectdesc{
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    margin: 0px auto;
+  }
+
+  .projectstats{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+
+  .projectstatitem{
+    margin: auto;
+  }
+
+  .projectkpi{
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFBF00;
+    text-align: center;
+  }
+
+  .projectkpidesc {
+      text-align: center;
+      width: 100px;
+      color: #3d4554;
+      font-size: 13px;
+  }
+
+  .projectcampagnebtns{
+    width: 20%;
+    right: 50px;
+    color: white;
+  }
+
+  .projectfooter {
+    background: #F4F4F4;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding: 0px 50%;
+    color: rgba(0,0,0,0.3);
+  }
+
+  .projectfooter a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .projectfooter a:hover {
+    opacity: 1;
+  }
+
+  .donnertext{
+    display: block
+  }
+
+  .projectdonnerdesc {
+    text-align: justify;
+    padding: 10% 15% 4% 15%;
+    color: #3d4554;
+    font-size: 25px;
+  }
+}
+
+.projectcampagnebtns{
+  text-decoration: none;
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  background-color: #FFBF00;
+  border-color: #FFBF00;
+  font-weight: bold;
+  border-radius: 50px;
+  height: auto;
+  padding: 15px 10px;
+  position: fixed;
+  bottom: 10px;
+
+}
+
+.projectcampagnebtns a {
+    color: WHITE;
+  }
+  .footer-links a {
+    padding: 0px;
+  }
