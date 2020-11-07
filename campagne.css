@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1200px) {
   .campagnelogo {
-    width: auto;
-    align-items: center;
+    text-align: center;
+    margin: 10% 10% 10% 20%;
   }
 
   .campagneright {
