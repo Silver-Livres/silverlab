@@ -17,12 +17,12 @@
   }
 
   .donnertitle {
-    width: 50%;
-    margin: 10% 5%;
+    width: 80%;
+    margin: 10% 5% 1% 5%;
     text-align: left;
     color: #3d4554;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 40px;
   }
 
   .donnerbtns {
